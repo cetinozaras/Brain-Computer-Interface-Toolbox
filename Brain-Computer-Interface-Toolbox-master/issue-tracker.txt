@@ -1,0 +1,17 @@
+x REFACTORS
+ - refactor pipe feature->classifier to allow easier feed of different featuresets; featuresets: spatial, eeg-bands, psd, ft-amplitudes re/im, ft-amplitudes abs/arg, and radial/quadratic addon features
+ - refactor nkiui, isolate ctrl-models into separate method, expose ctrl-model, classifier, and trainers for descendants (protected)
+ - add feature ranking-preselection to mnglm learning
+ - add FRQ/band-feature selection to learning functions
+ 
+x ftr_out1ch.m is broken after update to make_feature.m subsystem and remains broken
+
+x spectrogram building script crashes in nkbatch.m
+
+x implement CSP for raw EEG signal and features vectors in toolbox
+
+x alignment procedure fails if trigger data is missing one (first) of the events; alignment procedure is suboptimal (easily breaks under many conditions, not robust)
+
+x Add old-style signal-panel (rectangle) in nkiui
+
+x Fix in ftprep issue with eegband's calculation when band-based selection of frequencies returns [] (for frames of very small size)

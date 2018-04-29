@@ -1,0 +1,34 @@
+BCI toolchain
+|--- acqusition
+|      emologger3
+|--- analysis
+|      trials_make
+|      trials_show
+|      trials_erp
+|      trials_pdf
+|      trials_norm
+|--- ftrating
+|      r2
+|      mui
+|      svm
+|      onein
+|      oneout
+|--- learning
+|      lcurves
+|      lmodel
+|--- 3dRobotArm
+|      puma3d
+|      puma3d_control
+|      puma3d_getdt
+|--- super
+|      event-trainer
+|      bci-controller
+|--- nihonkohden
+|      importer
+
+
+<nihon kohden toolchain>
+importer-><work-toolchain>
+
+<work toolchain>
+event-train->feature-select->model-train->3drobot-control
